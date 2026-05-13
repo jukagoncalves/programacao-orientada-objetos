@@ -1,11 +1,17 @@
 package br.ufla.gct052.encapsulamento.model;
 public class Cliente {
-    //public String nome; PARTE A
+    //public String nome; //PARTE A
     //public String cpf;
+    
     private String nome;
     private String cpf;
     private Endereco endereco;
-
+    
+    //public Cliente(String nome, String cpf){
+    //    this.nome = nome;
+    //    this.cpf = cpf;
+    //}
+    
     public Cliente(String nome, String cpf){
         if (nome != null && !nome.isEmpty() && cpf != null && !cpf.isEmpty()) {
             this.nome = nome;
@@ -15,7 +21,6 @@ public class Cliente {
         }
     }
 
-    //getters
     public String getNome(){
         return this.nome;
     }
@@ -40,5 +45,5 @@ public class Cliente {
 
     public void setEndereco(Endereco end){
         this.endereco = end;
-    }
+    } 
 }

@@ -19,14 +19,14 @@ para preservar o código original como registro histórico da Parte A.
 
 public class App {
     public static void main(String[] args) throws Exception {        
-        //Cliente juka = new Cliente("Juka", "");
+        //Cliente juka = new Cliente("Juka", "123.456.789-99");
         //Conta contaJuka = new Conta(10000.00, 7500.00, juka);
         
         System.out.println("===================================");
         System.out.println("Problema 1: Saldo negativo direto!");
         System.out.println("===================================");
         //System.out.println("[ANTES] Saldo: " + contaJuka.saldo); //saldo antes de alterar
-        System.out.println("[AÇÃO] contaJuka.saldo = -1000 (acesso direto ao atributo publico)");
+        //System.out.println("[AÇÃO] contaJuka.saldo = -1000 (acesso direto ao atributo publico)");
         //contaJuka.saldo = -1000;
         //System.out.println("[DEPOIS] Saldo atual: " + contaJuka.saldo);
         System.out.println("[RISCO] Um banco com saldo negativo é incoerente, Há uma ausencia de controle." + "\n" + 
@@ -45,7 +45,7 @@ public class App {
         System.out.println("\n===================================");
         System.out.println("Problema 3: Conta titular null!");
         System.out.println("===================================");
-        //System.out.println("[ANTES] Conta titular: " + contaJuka.titular);
+        //System.out.println("[ANTES] Conta titular: " + contaJuka.titular.nome);
         System.out.println("[AÇÃO] conta.titular = null (acesso direto ao atributo publico" + "\n" +
                             "conta.titular.nome (tentar acessar um campo de um atributo nulo)");
         //contaJuka.titular = null;

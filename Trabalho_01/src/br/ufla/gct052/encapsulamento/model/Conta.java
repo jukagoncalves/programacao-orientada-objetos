@@ -2,17 +2,16 @@ package br.ufla.gct052.encapsulamento.model;
 
 public class Conta {
     public static int proximoNumero = 1;
-    /* PARTE A
-    public int numero = 0;
-    public double saldo;
-    public double limite;
-    public Cliente titular;
-    */
+    /* PARTE A */
+    //public int numero = 0;
+    //public double saldo;
+    //public double limite;
+    //public Cliente titular; 
 
     private int numero = 0;
     private double saldo;
     private double limite;
-    private Cliente titular;
+    private Cliente titular; 
 
     //construtor
     public Conta(double saldo,double limite, Cliente titular){
