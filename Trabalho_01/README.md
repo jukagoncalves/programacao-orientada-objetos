@@ -7,7 +7,7 @@
 
 ---
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 Trabalho_01/
@@ -25,7 +25,7 @@ Trabalho_01/
 
 ---
 
-## ▶️ Como Compilar e Executar
+## Como Compilar e Executar
 
 Todos os comandos devem ser executados a partir da pasta `src/`.
 
@@ -56,11 +56,11 @@ java br.ufla.gct052.encapsulamento.app.AppB
 java br.ufla.gct052.encapsulamento.app.AppC
 ```
 
-> ⚠️ Atenção: na compilação use barras `/` nos caminhos. Na execução use pontos `.` no nome da classe.
+> Atenção: na compilação use barras `/` nos caminhos. Na execução use pontos `.` no nome da classe.
 
 ---
 
-## 📌 Parte A — Demonstração de Problemas com Estado Exposto
+## Parte A — Demonstração de Problemas com Estado Exposto
 
 O arquivo `App.java` foi escrito com os atributos de `Cliente` e `Conta` públicos (`public`), demonstrando como a ausência de encapsulamento permite que qualquer parte do programa coloque os objetos em estados inválidos e incoerentes.
 
@@ -73,11 +73,11 @@ Foram demonstradas 4 situações problemáticas:
 | Titular nulo | `conta.titular = null` seguido de acesso ao campo | Causa `NullPointerException`, tornando a conta inacessível |
 | CPF fraudado | `cliente.cpf = "cpf-fraudado"` | Compromete a identidade do cliente, permitindo fraudes |
 
-> ⚠️ Após a refatoração da Parte B, os acessos diretos aos atributos deixaram de compilar — o que demonstra na prática que o encapsulamento torna impossível, já em tempo de compilação, qualquer manipulação indevida do estado interno dos objetos.
+> Após a refatoração da Parte B, os acessos diretos aos atributos deixaram de compilar — o que demonstra na prática que o encapsulamento torna impossível, já em tempo de compilação, qualquer manipulação indevida do estado interno dos objetos.
 
 ---
 
-## 📌 Parte B — Refatoração com Encapsulamento
+## Parte B — Refatoração com Encapsulamento
 
 A refatoração aplicou encapsulamento completo nas classes `Cliente` e `Conta`, corrigindo todos os problemas identificados na Parte A.
 
@@ -112,7 +112,7 @@ A refatoração aplicou encapsulamento completo nas classes `Cliente` e `Conta`,
 
 ---
 
-## 📌 Parte C — Referência Mutável
+## Parte C — Referência Mutável
 
 ### O problema
 
@@ -148,7 +148,7 @@ Agora, quem recebe o endereço recebe uma **cópia independente**. Qualquer alte
 
 ---
 
-## 💡 Principais Aprendizados
+## Principais Aprendizados
 
 - **Encapsulamento** não é apenas tornar atributos privados — é garantir que o estado interno de um objeto só possa ser alterado de formas válidas e controladas, por meio de métodos com regras de negócio bem definidas.
 
